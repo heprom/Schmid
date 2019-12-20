@@ -1,0 +1,8 @@
+*************** TIME = 1.00000e+00
+	Variables at Gauss Point	1	of element	1
+	eto11 = -3.00000e-04	eto22 = -3.00000e-04	eto33 = 1.00000e-03	eto12 < 1.00000e-08
+	eto23 < 1.00000e-08	eto31 < 1.00000e-08	sig11 < 1.00000e-08	sig22 < 1.00000e-08
+	sig33 = 1.00000e+02	sig12 < 1.00000e-08	sig23 < 1.00000e-08	sig31 < 1.00000e-08
+	tau_oct1 = 4.08248e+01	tau_oct2 = 4.08248e+01	tau_oct3 < 1.00000e-08	tau_oct4 = 4.08248e+01
+	tau_oct5 = 4.08248e+01	tau_oct6 < 1.00000e-08	tau_oct7 = 4.08248e+01	tau_oct8 < 1.00000e-08
+	tau_oct9 = 4.08248e+01	tau_oct10 < 1.00000e-08	tau_oct11 = -4.08248e+01	tau_oct12 = -4.08248e+01

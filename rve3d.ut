@@ -1,0 +1,5 @@
+**meshfile rve3d.geofp
+**node
+**integ eto11 eto22 eto33 eto12 eto23 eto31 sig11 sig22 sig33 sig12 sig23 sig31 octi11 octi22 octi33 octi12 octi23 octi31 gamoct1 gamoct2 gamoct3 gamoct4 gamoct5 gamoct6 gamoct7 gamoct8 gamoct9 gamoct10 gamoct11 gamoct12 octcum1 octcum2 octcum3 octcum4 octcum5 octcum6 octcum7 octcum8 octcum9 octcum10 octcum11 octcum12 octgeq tau_oct1 tau_oct2 tau_oct3 tau_oct4 tau_oct5 tau_oct6 tau_oct7 tau_oct8 tau_oct9 tau_oct10 tau_oct11 tau_oct12
+**element
+1 1 1 1 1.000000000000000e+00

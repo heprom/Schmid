@@ -1,0 +1,39 @@
+****calcul
+ ***mesh
+  **predefined rve3d
+ ***resolution newton
+  **sequence 1
+   *time 1.0
+   *increment 1
+   *ratio .1
+   *algorithm p1p2p3
+   *iteration 10
+ ***bc
+  **impose_element_dof
+     1 E33 0.001 time
+ ***material
+   *file rve3d.inp
+   *rotation 0. 0. 0. % orientation cube
+
+ ***output
+  **test
+   *precision 5
+   *small 1.e-8
+   *gauss_var 1 1 eto11 eto22 eto33 eto12 eto23 eto31 sig11 sig22 sig33 sig12 sig23 sig31
+      tau_oct1 tau_oct2 tau_oct3 tau_oct4 tau_oct5 tau_oct6 tau_oct7 tau_oct8 tau_oct9 tau_oct10 tau_oct11 tau_oct12
+****return
+
+***behavior gen_evp
+ **global_output
+ **elasticity isotropic
+   young 100000.
+   poisson 0.3
+ **potential octahedral oct
+  *store_all
+  *flow plasticity
+%  *flow norton
+%   K 0.1 n 1.0
+  *isotropic constant
+   R0 100.
+***return
+

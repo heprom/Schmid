@@ -1,0 +1,13 @@
+# Byte-compiled / optimized / DLL files
+pymicro/*.py[cod]
+pymicro/*/*.py[cod]
+pymicro/*/tests/*.py[cod]
+pymicro/*/__pycache__
+pymicro/*/tests/__pycache__
+
+# z-set
+*.msg
+*.rst
+
+# Jupyter
+# .ipynb_checkpoints
