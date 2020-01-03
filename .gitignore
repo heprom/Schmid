@@ -8,6 +8,7 @@ pymicro/*/tests/__pycache__
 # z-set
 *.msg
 *.rst
+rve3d_CR_Commented.inp
 
 # Jupyter
 # .ipynb_checkpoints
