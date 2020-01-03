@@ -1,0 +1,5 @@
+**meshfile rve3d.geofp
+**node
+**integ eto11 eto22 eto33 eto12 eto23 eto31 sig11 sig22 sig33 sig12 sig23 sig31 basi11 basi22 basi33 basi12 basi23 basi31 gambas1 gambas2 gambas3 bascum1 bascum2 bascum3 basgeq tau_bas1 tau_bas2 tau_bas3
+**element
+1 1 1 1 1.000000000000000e+00
