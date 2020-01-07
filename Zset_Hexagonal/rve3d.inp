@@ -13,17 +13,18 @@
      1 E33 0.001 time
  ***material
    *file rve3d.inp
-   *rotation 45. 0. 0. #Rotation of 45° around x axis --> In order to observe shear on basal planes (tau_bas1)
+   *rotation 0. 45. 0. #Rotation of PHI=45° (second rotation around x axis)  --> In order to observe shear on basal planes (tau_bas1)
 
  ***output
   **test
    *precision 5
    *small 1.e-8
 
-   #We added tau_bas1 to visualize the planes along which slip can occur (depending on the load), since we declared basal crystal potential
-   #Even if octahedral shear stresses are not relevant in this case we should observe shear on those planes: TBC with HP
+   #NOTE1: The only values of interest for Zset are the one associated to the material declared. All the other values are discarded: e.g. we can always define a plane with normal (1,1,1) in space. But for a HCP crystal it does not correspond to any physical crystallographic plane and in addition it does not correspond to any dense plane --> This is useless to study the shear on this plane.
+   #NOTE1: We reuse the code of FCC latice. But since we declared a material gen_evp with basal potential (meaning implicitly that we deal with a HCP crystal) we want to evaluate the corresponding physical resolved shear stresses. We do not deal with a FCC cubic lattice anymore (no octahedral oct potential declared) --> "tau_oct" values don't mean anything for Zset. It would return default value zero --> We comment those output values to not generate them uselessly   
    *gauss_var 1 1 eto11 eto22 eto33 eto12 eto23 eto31 sig11 sig22 sig33 sig12 sig23 sig31
-   tau_oct1 tau_oct2 tau_oct3 tau_oct4 tau_oct5 tau_oct6 tau_oct7 tau_oct8 tau_oct9 tau_oct10 tau_oct11 tau_oct12 tau_bas1 
+   #tau_oct1 tau_oct2 tau_oct3 tau_oct4 tau_oct5 tau_oct6 tau_oct7 tau_oct8 tau_oct9 tau_oct10 tau_oct11 tau_oct12 
+   tau_bas1 
 ****return
 
 ***behavior gen_evp

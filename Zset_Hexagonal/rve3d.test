@@ -6,4 +6,4 @@
 	tau_oct1 < 1.00000e-08	tau_oct2 < 1.00000e-08	tau_oct3 < 1.00000e-08	tau_oct4 < 1.00000e-08
 	tau_oct5 < 1.00000e-08	tau_oct6 < 1.00000e-08	tau_oct7 < 1.00000e-08	tau_oct8 < 1.00000e-08
 	tau_oct9 < 1.00000e-08	tau_oct10 < 1.00000e-08	tau_oct11 < 1.00000e-08	tau_oct12 < 1.00000e-08
-	tau_bas1 < 1.00000e-08
+	tau_bas1 = -4.33013e+01
